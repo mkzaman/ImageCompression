@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ImageCompressor
 {
-    public class Class1
+    public interface IImageCompressor
     {
+        void CompressImage(int CompressionRate, string inputfilePath, string outputfilePath = "");
     }
 }
